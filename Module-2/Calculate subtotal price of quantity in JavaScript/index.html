@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate subTotal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="MainDiv">
+        <table>
+            <tr>
+                <th>Product Info</th>
+                <th>Quantity</th>
+                <th>Price(per unit)</th>
+                <th>Price(subtotal)</th>
+                <th></th>
+            </tr>
+            <tr id="row_1">
+                <td>Fortunate Window Hardware - Decorative Holdbacks - Mocha</td>
+                <td><input type="text" value="1" onChange="check_value_1(this.value); SumOfSubTotal();"></td>
+                <td>$<p id="Price_1">29.99</p></td>
+                <td>$<p id="subTotal_1" onChange="">29.99</p></td>
+                <td><button class="btn" onclick="Delete_Row_1();">Remove</button></td>
+            </tr>
+            <tr id="row_2">
+                <td>Wolven Trelis Window Hardware - Clip Rings - Bronze</td>
+                <td><input type="text" value="1" onChange="check_value_2(this.value); SumOfSubTotal();"></td>
+                <td>$<p id="Price_2">12.99</p></td>
+                <td>$<p id="subTotal_2" onChange="">12.99</p></td>
+                <td><button class="btn" onclick="Delete_Row_2();">Remove</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>$<p id="subTotal_All">42.98</p></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>    
+</body>
+</html>
