@@ -4,6 +4,7 @@ import HomeCompo from "./Home"
 import About from "./About.jsx"
 import LoginCompo from "./LoginCompo.jsx"
 import RegistrationCompo from "./RegistrationPage.jsx"
+import AdminpanelCompo from "./Adminpanel"
 import React, { Suspense } from 'react';
 
 // const ClassCompoRoute = React.lazy(()=>{ return import('./component/ClassCompo/ClassCompoRouter')});
@@ -30,6 +31,10 @@ const MainRouter = createBrowserRouter([
     {
         path: "/register",
         element: <><RegistrationCompo/></>,
+    },
+    {
+        path: "/admin",
+        element: <><AdminpanelCompo/></>,
     },
     // {
     //     path: "/examples",

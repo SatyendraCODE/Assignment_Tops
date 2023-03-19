@@ -69,6 +69,17 @@ export default function HeaderCompo() {
                         Login
                       </Link>
                     </MDBDropdownItem>
+                    <MDBDropdownItem>
+                      <Link className="nav-link" to="/">
+                        Log out
+                      </Link>
+                    </MDBDropdownItem>
+                    <hr/>
+                    <MDBDropdownItem>
+                      <Link className="nav-link" to="/admin">
+                        Admin
+                      </Link>
+                    </MDBDropdownItem>
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavbarItem>
