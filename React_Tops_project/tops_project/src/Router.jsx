@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import HeaderCompo from "./commonCompo/header"
 import HomeCompo from "./Home"
 import About from "./About.jsx"
-import LoginCompo from "./LoginCompo.jsx"
+import LoginCompo from "./LoginNewCompo.jsx"
 import RegistrationCompo from "./RegistrationPage.jsx"
 import AdminpanelCompo from "./adminCompo/Adminpanel"
 import React, { Suspense } from 'react';

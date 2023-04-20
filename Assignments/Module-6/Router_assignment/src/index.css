@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-link{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav-link:hover{
+    border-bottom: 1px solid white;
+    opacity: .8;
+    
+}
